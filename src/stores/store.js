@@ -5,7 +5,7 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import storage from 'redux-persist/lib/storage';
 
 import rootReducer from '../reducers/rootReducers';
-import rootSaga from '../sagas/rootSagas';
+import rootSaga from '../sagas/rootSaga';
 
 const sagaMiddleware = createSagaMiddleware();
 // eslint-disable-next-line no-underscore-dangle
