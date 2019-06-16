@@ -1,0 +1,228 @@
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100% - 40px);
+    max-width: 100%; } }
+@media screen and (max-width: 480px) {
+  .signup-content {
+    padding: 50px 25px; } }
+
+.header{
+  position:relative;
+  overflow:hidden;
+  color:#eee;
+}
+
+.header a{
+  color:#eee
+} 
+
+.sides, .info{
+  flex: 0 0 auto;
+}
+
+.info{
+  width:100%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+}
+
+.author{
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:url(/images/stark-avatar.jpg) center no-repeat;
+  background-size:cover;
+  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+  margin-bottom:3px
+}
+
+.info h4, .meta{
+  font-size:0.7em
+}
+
+.meta{
+  font-style:italic;
+}
+
+.content{  
+  padding:5% 10%;
+  text-align:justify
+}
+
+.btn{
+  color:#333;
+  border:2px solid;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  font-weight:600
+}
+
+.twtr{
+  margin-top:100px
+}.btn.twtr:after{content:"\1F426";padding-left:5px}
+
+.content{  
+  padding:5% 10%;
+  text-align:justify
+}
+
+@font-face {
+  font-family: 'Sucrose Bold Two';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'IM Fell French Canon Pro';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/im-fell-french-canon-pro.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header { 
+  height: 65vw;
+  background:url(/images/stark.jpg) center no-repeat;
+  padding-top: 51.93333333%;
+  background-size: cover;
+  font-family: 'Sucrose Bold Two';
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45.8%;
+}
+
+header h1 { 
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 12vw;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+}
+
+.login-button {
+  position: fixed;
+  left:2rem;
+  top: 2rem;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  border:3px solid #fff;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  margin:20px;
+  padding:5px 10px;
+  font-weight:600;
+  font-size:1.8rem;
+  box-sizing:border-box;
+}
+
+.signup-button {
+  position: fixed;
+  left: 9rem;
+  top: 2rem;
+  line-height: .8;
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  border:3px solid #fff;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  margin:20px;
+  padding:5px 10px;
+  font-weight:600;
+  font-size:1.8em;
+  box-sizing:border-box;
+}
+
+header h1 span {
+  display: block;
+  font-size: 8.75vw;
+}
+main { 
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  padding: 2rem 25%;
+  line-height: 1.6;
+}
+
+.modal-position {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+
+        /* close Button */
+.close-button {
+  opacity: 0.65;
+  width: 35px;
+  height: 35px;
+  box-shadow: 0px 10 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: #000;
+  left: 1%;
+  top: 1%;
+  position: absolute;
+  display: block;
+  z-index: 200;
+  text-indent: -9999px;
+}
+.close-button:before,
+.close-button:after {
+  content: "";
+  width: 55%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 48%;
+  left: 22%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.close-button:after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.close-button:hover:before,
+.close-button:hover:after {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+    /* end close Button */
