@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.19.0",
     "babel-cli": "6.24.1",
     "babel-core": "6.26.3",
     "babel-loader": "8.0.5",
@@ -13,7 +13,9 @@
     "cross-env": "^3.2.3",
     "file-loader": "^4.0.0",
     "flow": "^0.2.3",
+    "formik": "^1.5.7",
     "jquery": "^3.1.1",
+    "keymirror": "^0.1.1",
     "laravel-mix": "^0.8.3",
     "lodash": "^4.17.4",
     "material-ui": "^0.16.5",
@@ -30,7 +32,8 @@
     "redux-actions": "^2.6.5",
     "redux-devtools": "^3.5.0",
     "redux-persist": "^5.10.0",
-    "redux-saga": "^1.0.2"
+    "redux-saga": "^1.0.2",
+    "yup": "^0.27.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -54,5 +57,6 @@
   ],
   "devDependencies": {
     "babel-plugin-transform-assets": "^1.0.2"
-  }
+  },
+  "proxy": "http://localhost:3001/"
 }

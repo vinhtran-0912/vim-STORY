@@ -35,7 +35,7 @@ const HeaderForm = () => {
         <div id="modal-root" className="modal-position"></div>
         <div className="sides">
           <ToggleContent
-            toggle={show => <a href="/#0" onClick={() => {
+            toggle={show => <a href="#0" onClick={() => {
               setIsSignIn(true);
               show();
             }} 

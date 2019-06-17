@@ -15,6 +15,24 @@ const SignupForm = () => (
 							<div className="form-group">
 									<input type="email" className="form-input" name="email" id="email" placeholder="Your Email"/>
 							</div>
+
+							<div class="row row-space">
+								<div class="col-2">
+										<div className="form-group">
+											<input className="form-input" type="date" name="dateofbirth" id="dateofbirth"/>
+										</div>
+								</div>
+								<div className="col-4 row-space">
+									<div class="select">
+										<select name="slct" id="slct">
+											<option value="0">MALE</option>
+											<option value="1">FEMALE</option>
+											<option value="2">ANOTHER</option>
+										</select>
+									</div>
+								</div>
+						</div>
+
 							<div className="form-group">
 									<input type="password" className="form-input" name="password" id="password" placeholder="Password"/>
 									<span toggle="#password" className="zmdi zmdi-eye field-icon toggle-password"></span>
